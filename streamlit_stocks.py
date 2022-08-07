@@ -3,7 +3,7 @@ import streamlit as st
 
 st.write("""
 # Simple Stock Price App
-Shown are the stock closing price and volume of Starbucks!
+Type the ticker symbol for which you'd like to see the historical stock closing price
 """)
 
 tickerSymbol = st.text_input('Ticker Symbol:','SBUX')
@@ -26,5 +26,7 @@ Key Stats:
 
 tickerDf = tickerData.history(period='1d', start='2019-01-01', end='2022-8-05')
 
+st.write("""
+### Stock Closing Price
+""")
 st.line_chart(tickerDf.Close)
-st.line_chart(tickerDf.Volume)
