@@ -5,7 +5,8 @@ from datetime import timedelta
 
 st.write("""
 # Simple Stock Price App
-Type the ticker symbol for which you'd like to see the last 90 Day stock closing price
+Type the ticker symbol (AAPL, FB, MSFT, GOOG etc.) for which you'd like to see the last 90 Day stock closing price.
+* You can choose your own timeframe using the date selectors on the left *
 """)
 
 # Get Dates
