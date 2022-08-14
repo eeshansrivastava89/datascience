@@ -18,28 +18,58 @@ What was the volume of orders for each day of the week?
 
 */
 
--- Samples
-
-SELECT * FROM pizza_runner.customer_orders
-SELECT * FROM pizza_runner.runner_orders
-SELECT * FROM pizza_runner.pizza_names
-SELECT * FROM pizza_runner.pizza_toppings
-SELECT * FROM pizza_runner.pizza_recipes
-SELECT * FROM pizza_runner.runners
-
 -- Section 1: Pizza Metrics
 
 -- Q1: How many pizzas were ordered?
 
-
-
+SELECT count(order_id) AS total_pizzas_ordered
+FROM pizza_runner.customer_orders
 
 
 -- Q2: How many unique customer orders were made?
+
+SELECT count(DISTINCT order_id) AS total_unique_orders
+FROM pizza_runner.customer_orders
+
 -- Q3: How many successful orders were delivered by each runner?
+
+SELECT ro.runner_id, count(DISTINCT co.order_id)
+FROM pizza_runner.customer_orders co
+JOIN pizza_runner.runner_orders ro
+	ON co.order_id = ro.order_id
+WHERE 1=1
+AND (ro.cancellation NOT LIKE ('%Cancellation%') OR ro.cancellation IS NULL)
+GROUP BY 1
+
+
 -- Q4: How many of each type of pizza was delivered?
+
+SELECT pn.pizza_name, count(co.pizza_id) AS pizza_count
+FROM pizza_runner.customer_orders co
+JOIN pizza_runner.runner_orders ro
+	ON co.order_id = ro.order_id
+JOIN pizza_runner.pizza_names pn
+	ON co.pizza_id = pn.pizza_id
+WHERE 1=1
+AND (ro.cancellation NOT LIKE ('%Cancellation%') OR ro.cancellation IS NULL)
+GROUP BY 1
+
 -- Q5: How many Vegetarian and Meatlovers were ordered by each customer?
+
+SELECT  co.customer_id, 
+		count(CASE WHEN pn.pizza_name = 'Vegetarian' THEN co.pizza_id ELSE NULL END) AS veg_count,
+		count(CASE WHEN pn.pizza_name = 'Meatlovers' THEN co.pizza_id ELSE NULL END) AS meat_count
+FROM pizza_runner.customer_orders co
+JOIN pizza_runner.pizza_names pn
+	ON co.pizza_id = pn.pizza_id
+WHERE 1=1
+GROUP BY 1
+ORDER BY 1 asc
+
 -- Q6: What was the maximum number of pizzas delivered in a single order?
+
+
+
 -- Q7: For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
 -- Q8: How many pizzas were delivered that had both exclusions and extras?
 -- Q9: What was the total volume of pizzas ordered for each hour of the day?
