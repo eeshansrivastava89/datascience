@@ -1,6 +1,11 @@
+import os
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
+
+# Set the current working directory to the part1 folder
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 sys.path.append("..")
 from utils import *
 from linear_regression import *
@@ -41,7 +46,7 @@ def run_linear_regression_on_MNIST(lambda_factor=1):
 
 
 # Don't run this until the relevant functions in linear_regression.py have been fully implemented.
-print('Linear Regression test_error =', run_linear_regression_on_MNIST(lambda_factor=1))
+print('Linear Regression test_error =', run_linear_regression_on_MNIST(lambda_factor=0.01))
 
 
 #######################################################################
