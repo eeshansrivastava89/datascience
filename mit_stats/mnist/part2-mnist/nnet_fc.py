@@ -9,6 +9,8 @@ import torch.nn.functional as F
 import torch.nn as nn
 import sys
 sys.path.append("..")
+#sys.path.append("/Users/eeshans/dev/datascience/mit_stats/mnist")
+print(sys.path)
 import utils
 from utils import *
 from train_utils import batchify_data, run_epoch, train_model
