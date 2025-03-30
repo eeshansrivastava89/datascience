@@ -19,6 +19,14 @@ class MLP(nn.Module):
         super(MLP, self).__init__()
         self.flatten = Flatten()
         # TODO initialize model layers here
+        nn.Sequential(
+            nn.Linear(input_dimension, 128),
+            nn.ReLU(),
+            nn.Linear(128, 64),
+            nn.ReLU(),
+            nn.Linear(64, 10),
+            nn.Softmax()
+        )
 
     def forward(self, x):
         xf = self.flatten(x)
