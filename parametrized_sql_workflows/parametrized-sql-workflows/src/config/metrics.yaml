@@ -1,0 +1,25 @@
+metrics:
+  - name: conversion_rate
+    description: "The rate of conversions from clicks to purchases"
+    formula: "SUM(CASE WHEN event_type = 'purchase' THEN 1 ELSE 0 END) / NULLIF(SUM(CASE WHEN event_type = 'click' THEN 1 ELSE 0 END), 0)"
+    filters:
+      - filter_name: date_range
+        filter_value: "last_30_days"
+      - filter_name: user_segment
+        filter_value: "new_users"
+
+  - name: average_order_value
+    description: "The average value of orders placed"
+    formula: "SUM(order_value) / NULLIF(COUNT(order_id), 0)"
+    filters:
+      - filter_name: date_range
+        filter_value: "last_30_days"
+      - filter_name: user_segment
+        filter_value: "all_users"
+
+  - name: click_through_rate
+    description: "The rate of clicks to impressions"
+    formula: "SUM(CASE WHEN event_type = 'click' THEN 1 ELSE 0 END) / NULLIF(SUM(impressions), 0)"
+    filters:
+      - filter_name: campaign_id
+        filter_value: "current_campaign"

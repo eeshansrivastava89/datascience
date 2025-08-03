@@ -1,0 +1,11 @@
+SELECT
+    {{ metric_name }} AS metric_value,
+    COUNT(*) AS total_count
+FROM
+    {{ table_name }}
+WHERE
+    {{ filter_conditions }}
+GROUP BY
+    {{ metric_name }}
+ORDER BY
+    metric_value DESC;
