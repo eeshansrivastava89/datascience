@@ -1,3 +1,3 @@
 # datascience
 
-There's nothing here right but soon this will be filled with awesome data science projects.
+Just a repo for random projects or exercises from stats & ML courses I've been taking. 
