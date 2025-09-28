@@ -1,0 +1,11 @@
+# Sensitive data files
+*.xlsx
+*.xls
+
+# Private documentation (if you want to keep README private)
+README.md
+
+# Other sensitive files
+config.json
+*.env
+*.key
