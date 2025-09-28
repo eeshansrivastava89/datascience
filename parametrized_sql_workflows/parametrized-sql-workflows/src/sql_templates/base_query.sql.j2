@@ -1,0 +1,10 @@
+SELECT
+    {{ metrics | join(',\n    ') }}
+FROM
+    {{ tables | join(',\n    ') }}
+WHERE
+    {{ filters | join(' AND ') }}
+GROUP BY
+    {{ group_by | join(',\n    ') }}
+ORDER BY
+    {{ order_by | default('1') }};

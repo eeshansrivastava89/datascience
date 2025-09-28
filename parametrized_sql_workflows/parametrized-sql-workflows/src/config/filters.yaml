@@ -1,0 +1,14 @@
+filters:
+  user_type:
+    - type: "new"
+      description: "Filter for new users"
+    - type: "returning"
+      description: "Filter for returning users"
+  transaction_status:
+    - status: "completed"
+      description: "Filter for completed transactions"
+    - status: "pending"
+      description: "Filter for pending transactions"
+  date_range:
+    start_date: "2023-01-01"
+    end_date: "2023-12-31"
