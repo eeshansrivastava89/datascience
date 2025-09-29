@@ -1,0 +1,41 @@
+Participant,Temperature,Brand,Guess
+Rishabh,Hot,Krispy Kreme,Macrina
+Andre,Hot,Krispy Kreme,Krispy Kreme
+Soohyun,Hot,Krispy Kreme,Krispy Kreme
+Anya,Hot,Krispy Kreme,Macrina
+Kevin,Hot,Krispy Kreme,Starbucks
+Amir,Hot,Krispy Kreme,Macrina
+Lauren,Hot,Krispy Kreme,McDonalds
+Liz,Hot,Krispy Kreme,McDonalds
+Rishabh,Hot,McDonalds,Starbucks
+Andre,Hot,McDonalds,Macrina
+Soohyun,Hot,McDonalds,Starbucks
+Anya,Hot,McDonalds,7-Eleven
+Kevin,Hot,McDonalds,7-Eleven
+Amir,Hot,McDonalds,McDonalds
+Lauren,Hot,McDonalds,Macrina
+Liz,Hot,McDonalds,Macrina
+Rishabh,Hot,Starbucks,McDonalds
+Andre,Hot,Starbucks,Starbucks
+Soohyun,Hot,Starbucks,McDonalds
+Anya,Hot,Starbucks,Starbucks
+Kevin,Hot,Starbucks,Krispy Kreme
+Amir,Hot,Starbucks,Starbucks
+Lauren,Hot,Starbucks,Starbucks
+Liz,Hot,Starbucks,Starbucks
+Rishabh,Hot,7-Eleven,7-Eleven
+Andre,Hot,7-Eleven,7-Eleven
+Soohyun,Hot,7-Eleven,7-Eleven
+Anya,Hot,7-Eleven,McDonalds
+Kevin,Hot,7-Eleven,7-Eleven
+Amir,Hot,7-Eleven,Krispy Kreme
+Lauren,Hot,7-Eleven,7-Eleven
+Liz,Hot,7-Eleven,Krispy Kreme
+Rishabh,Hot,Macrina,Krispy Kreme
+Andre,Hot,Macrina,McDonalds
+Soohyun,Hot,Macrina,Macrina
+Anya,Hot,Macrina,Krispy Kreme
+Kevin,Hot,Macrina,Macrina
+Amir,Hot,Macrina,7-Eleven
+Lauren,Hot,Macrina,Krispy Kreme
+Liz,Hot,Macrina,7-Eleven

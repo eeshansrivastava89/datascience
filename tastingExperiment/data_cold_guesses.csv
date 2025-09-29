@@ -1,0 +1,41 @@
+Participant,Temperature,Brand,Guess
+Rishabh,Cold,7-Eleven,Krispy Kreme
+Andre,Cold,7-Eleven,McDonalds
+Soohyun,Cold,7-Eleven,7-Eleven
+Anya,Cold,7-Eleven,Macrina
+Kevin,Cold,7-Eleven,Starbucks
+Amir,Cold,7-Eleven,7-Eleven
+Lauren,Cold,7-Eleven,McDonalds
+Liz,Cold,7-Eleven,7-Eleven
+Rishabh,Cold,Krispy Kreme,Macrina
+Andre,Cold,Krispy Kreme,Macrina
+Soohyun,Cold,Krispy Kreme,Macrina
+Anya,Cold,Krispy Kreme,7-Eleven
+Kevin,Cold,Krispy Kreme,Krispy Kreme
+Amir,Cold,Krispy Kreme,Krispy Kreme
+Lauren,Cold,Krispy Kreme,Krispy Kreme
+Liz,Cold,Krispy Kreme,McDonalds
+Rishabh,Cold,Macrina,Starbucks
+Andre,Cold,Macrina,Krispy Kreme
+Soohyun,Cold,Macrina,Starbucks
+Anya,Cold,Macrina,McDonalds
+Kevin,Cold,Macrina,7-Eleven
+Amir,Cold,Macrina,Starbucks
+Lauren,Cold,Macrina,Macrina
+Liz,Cold,Macrina,Krispy Kreme
+Rishabh,Cold,Starbucks,7-Eleven
+Andre,Cold,Starbucks,Starbucks
+Soohyun,Cold,Starbucks,McDonalds
+Anya,Cold,Starbucks,Starbucks
+Kevin,Cold,Starbucks,McDonalds
+Amir,Cold,Starbucks,McDonalds
+Lauren,Cold,Starbucks,Starbucks
+Liz,Cold,Starbucks,Macrina
+Rishabh,Cold,McDonalds,McDonalds
+Andre,Cold,McDonalds,7-Eleven
+Soohyun,Cold,McDonalds,Krispy Kreme
+Anya,Cold,McDonalds,Krispy Kreme
+Kevin,Cold,McDonalds,Macrina
+Amir,Cold,McDonalds,McDonalds
+Lauren,Cold,McDonalds,7-Eleven
+Liz,Cold,McDonalds,Starbucks
